@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FinPath Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+ <link rel="stylesheet" href="style.css">
+ <script src="script.js" defer></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <!-- Logo and Nav in one block for tighter grouping -->
+    <div style="display: flex; align-items: center;">
+      <div class="logo">
+  <img src="assets/1(1).jpeg" alt="Logo" class="logo-img">
+  FinPath
+</div>
+      <div class="nav-links">
+        <a href="#">About us</a>
+        <a href="#">Services</a>
+        <a href="#">Pricing</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="actions">
+      <button class="btn btn-outline">Free consultation</button>
+      <button class="btn btn-dark">Get started</button>
+    </div>
+  </nav>
+ 
+    <div class="container">
+    <div class="left">
+      <div class="tag">Financial services</div>
+      <h1>Build a sustainable <br>future for your<br> company</h1><br><br><br><br><br><br><br><br><br><br><br>
+      <p>Unlock success with tailored financial<br> consulting solutions for your business growth.</p>
+      <div class="buttons">
+        <button class="btn-primary">Free consultation</button>
+        <button class="btn-secondary">
+          <i class="bi bi-play-circle"></i>Watch video
+        </button>
+      </div>
+    </div>
+    <div class="right">
+      <img src="assets/2.jpeg" alt="Businessman" />
+      <div class="icons">
+        <i class="bi bi-gear"></i>
+        <i class="fas fa-globe"></i>
+        <i class="bi bi-file-earmark-text"></i>
+        <i class="bi bi-person-x-fill"></i>
+        <i class="bi bi-cart"></i>
+      </div>
+    </div>
+  </div>
+  
+<div class="section-2-wrapper">
+  <div class="section-2-top-row">
+    <div class="section-2-left">
+      <div class="section-2-tag">Commitment</div>
+      <h1>Your business goals<br>are our top priority</h1>
+    </div>
+    <div class="section-2-right">
+      <div class="section-2-tabs">
+        <div class="section-2-tab active" onclick="switchTab(this, 'expertise')">Expertise</div>
+        <div class="section-2-tab" onclick="switchTab(this, 'innovation')">Innovation</div>
+        <div class="section-2-tab" onclick="switchTab(this, 'accountability')">Accountability</div>
+      </div>
+      <div class="section-2-tab-content" id="section-2-tab-text">
+        We embody unwavering expertise, garnered through years of industry mastery. Our team’s extensive knowledge and refined skills ensure effective solutions, fostering trust and delivering excellence.
+      </div>
+    </div>
+  </div>
+
+  <div class="section-2-metrics">
+    <div class="section-2-metric-box">
+      <i class="bi bi-calendar2-week"></i>
+      <div class="value">15 +</div>
+      <div class="label">Years of industry experience</div>
+    </div>
+    <div class="section-2-metric-box">
+      <i class="bi bi-display"></i>
+      <div class="value">250</div>
+      <div class="label">Digital projects completed</div>
+    </div>
+    <div class="section-2-metric-box">
+      <i class="bi bi-hdd-network"></i>
+      <div class="value">300</div>
+      <div class="label">Data transferred monthly</div>
+    </div>
+    <div class="section-2-metric-box">
+      <i class="bi bi-bar-chart-line"></i>
+      <div class="value">450 +</div>
+      <div class="label">Certified financial advisors</div>
+    </div>
+  </div>
+</div>
+<div class="section-3-wrapper">
+    <div class="tab-nav">
+      <div class="tab-item active">Financial planning <span class="badge">PRO</span></div>
+      <div class="tab-item">Performance analysis <span class="badge">NEW</span></div>
+      <div class="tab-item">Investment advisory <span class="badge">PRO</span></div>
+    </div>
+
+    <div class="service-block">
+      <div class="service-text">
+        <div class="label">Financial planning</div>
+        <h2>Strategic planning for optimal growth</h2>
+        <p>Crafting precise financial roadmaps aligned with your business objectives.</p>
+        <ul>
+          <li>Optimize resource allocation</li>
+          <li>Adapt to market changes</li>
+          <li>Achieve long-term goals</li>
+        </ul>
+        <button class="btn">Learn more</button>
+      </div>
+      <div class="service-image">
+        <img src="assets/3(1).jpeg" alt="Planning Image">
+      </div>
+    </div>
+
+    <div class="service-block">
+      <div class="service-image">
+        <img src="assets/4(1).jpeg" alt="Analysis Image">
+      </div>
+      <div class="service-text">
+        <div class="label">Performance analysis</div>
+        <h2>In-depth financial performance analysis</h2>
+        <p>Analyze and enhance financial performance for sustained growth.</p>
+        <ul>
+          <li>Identify strengths and weaknesses</li>
+          <li>Optimize operational efficiency</li>
+          <li>Increase revenue streams</li>
+        </ul>
+        <button class="btn">Learn more</button>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <div class="service-text">
+        <div class="label">Investment advisory</div>
+        <h2>Expert advisory tailored for maximum returns</h2>
+        <p>Tailored investment strategies for optimal returns and risk management.</p>
+        <ul>
+          <li>Capitalize on market opportunities</li>
+          <li>Minimize investment risks</li>
+          <li>Realize growth potential</li>
+        </ul>
+        <button class="btn">Learn more</button>
+      </div>
+      <div class="service-image">
+        <img src="assets/5(1).jpeg" alt="Advisory Image">
+      </div>
+    </div>
+  </div>
+   <section class="section4">
+  <div class="section4-header">
+    <h2>Our customer <br>success stories</h2>
+    
+    <p class="section4-paragraph">
+      Discover how our consulting empowered Prosper to identify growth opportunities, revamp financial strategies, and achieve a 40% revenue surge within a year.
+    </p>
+
+    <button class="view-case-button">View case studies</button>
+  </div>
+   <div class="cards-container">
+    <div class="case-card">
+      <img src="assets/6.jpeg" alt="Case 1">
+      <h3>Identifying growth opportunities for Prosper: financial strategies</h3>
+      <p>Discover how our consulting empowered Prosper to identify growth opportunities, revamp financial strategies, and achieve a 40% revenue surge within a year.</p>
+      <button class="read-more">Read more</button>
+    </div>
+
+    <div class="case-card">
+      <img src="assets/7.jpeg" alt="Case 2">
+      <h3>Helping SummitEdge navigate challenges: regulatory compliance</h3>
+      <p>Explore our partnership with SummitEdge, navigating complex regulations, and enabling expansion, resulting in a successful market entry and sustained growth.</p>
+      <button class="read-more">Read more</button>
+    </div>
+
+    <div class="case-card">
+      <img src="assets/8.jpeg" alt="Case 3">
+      <h3>Improving EvolveVision efficiency: streamlining processes</h3>
+      <p>Witness how our consulting streamlined processes for EvolveVision, improving operational efficiency by 30%, reducing costs, and enhancing overall performance.</p>
+      <button class="read-more">Read more</button>
+    </div>
+  </div>
+</section>
+<section class="section5">
+  <div class="section5-header">
+    <div class="section5-title">
+      <h2>Tangible results<br>shared here</h2>
+    </div>
+    <div class="section5-subtext">
+      <p>Discover how businesses like yours transformed <br>with our software. Real stories of growth,
+        <br> innvation and success</p>
+    </div>
+    <div class="section5-button">
+      <button>Read all testimonials</button>
+    </div>
+  </div>
+
+  <div class="testimonial-cards">
+    <div class="testimonial-card">
+      <p>Helped navigate regulatory challenges. Valued advisors for strategic financial decisions.</p>
+      <div class="person">
+        <strong>Frederic Hill</strong><br>
+        <span>Founder & CEO</span>
+      </div>
+      <hr />
+      <div class="metric">
+        <h3>+ 120 %</h3>
+        <p>Increase in customer growth rate</p>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <p>Stellar support in navigating market complexities. Trusted partners for financial growth.</p>
+      <div class="person">
+        <strong>Safaa Sampson</strong><br>
+        <span>Account Executive</span>
+      </div>
+      <hr />
+      <div class="metric">
+        <h3>$ 250 k</h3>
+        <p>Saved in operational costs</p>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <p>Innovative solutions tailored to our needs. A reliable partner for our financial excellence.</p>
+      <div class="person">
+        <strong>Brendan Buck</strong><br>
+        <span>Business Manager</span>
+      </div>
+      <hr />
+      <div class="metric">
+        <h3>+ 25 %</h3>
+        <p>Increase in company revenue</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="faq-section">
+  <div class="faq-container">
+    <div class="faq-left">
+      <span class="badge">Help center</span>
+      <h1>Got a question?<br>Get your answer</h1><br><br><br><br><br><br><br><br>
+      <p>
+        Quick answers to questions you may have. Can’t<br> find what you’re looking for? Get in touch with us.
+      </p>
+      <button class="contact-btn">Get in touch</button>
+    </div>
+    <div class="faq-right">
+      <div class="accordion">
+        <div class="accordion-item active">
+          <button class="accordion-title">
+            1. How can financial consulting benefit my business?
+            <span class="icon">−</span>
+          </button>
+          <div class="accordion-content">
+            Our consulting optimizes strategies for sustainable growth and improved financial performance.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-title">
+            2. What distinguishes your firm from others in the industry?
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <!-- Hidden by default -->
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-title">
+            3. Do you offer services tailored to specific industries?
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-content"></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-title">
+            4. How do you ensure confidentiality with client data?
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-content"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="contact-section">
+  <div class="contact-container">
+    <div class="contact-form">
+      <p class="form-label">Let’s connect</p>
+      <h2>We’re here to help</h2>
+      <p class="subtext">Need help with a project, have a question about our work? We’re here.</p>
+      <form>
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email address" required />
+        <textarea placeholder="Message" rows="5" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="contact-image">
+      <img src="assets/9.jpeg" alt="CEO" />
+      <!-- <div class="overlay-text">
+        <p>An insightful consulting firm with an engaged team, offering solutions blending analytics and creativity.</p>
+        <p class="ceo">Alex Willson<br><span>Founder & CEO</span></p>
+        <p class="logo">✻ FinPath</p>
+      </div> -->
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <p class="logo">✻ FinPath</p>
+      <p class="footer-desc">
+        Our primary goal is to empower business owners, agencies, and freelancers with maximum creative freedom.
+      </p>
+    </div>
+    <div class="footer-column">
+      <p><strong>Page builder</strong></p>
+      <p>Theme options</p>
+      <p>Theme builder</p>
+      <p>Template library</p>
+    </div>
+    <div class="footer-column">
+      <p><strong>Support center</strong></p>
+      <p>Documentation</p>
+      <p>Community</p>
+      <p>Hosting</p>
+    </div>
+    <div class="footer-column social-icons">
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© FinPath WordPress Theme. All Rights Reserved.</p>
+    <p><a href="#">Terms & Conditions</a> <a href="#">Privacy Policy</a></p>
+  </div>
+</footer>
+<script>
+  document.querySelector('.contact-form form').addEventListener('submit', e => {
+  e.preventDefault();
+  alert('Form submitted! Thank you.');
+});
+
+</script>
+</body>
+</html>
