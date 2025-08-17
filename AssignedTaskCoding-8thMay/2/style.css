@@ -1,0 +1,212 @@
+body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .sidebar {
+    width: 280px;
+    height: 100vh;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-right: 1px solid #ddd;
+  }
+  
+  .sidebar .nav-link {
+    color: #111827;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .sidebar .nav-link:hover,
+  .sidebar .nav-link.active {
+    background-color: #f1f5f9;
+    border-radius: 8px;
+  }
+  
+  .sidebar .nav-icon {
+    margin-right: 10px;
+  }
+  
+  .badge-pill {
+    border-radius: 50px;
+    font-size: 12px;
+    padding: 0.3em 0.6em;
+    background-color: #f3f4f6;
+    color: #111827;
+  }
+  
+  .user-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 0.75rem;
+  }
+  
+  .user-card img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .dot-flashing {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #aaa;
+    color: #aaa;
+    animation: dotFlashing 1s infinite linear alternate;
+  }
+  
+  @keyframes dotFlashing {
+    0% { opacity: 0.2; }
+    50% { opacity: 1; }
+    100% { opacity: 0.2; }
+  }
+  .chat-window {
+      max-height: 500px;
+      overflow-y: auto;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1rem;
+      background-color: white;
+    }
+
+    .chat-bubble {
+      max-width: 75%;
+      padding: 10px 15px;
+      border-radius: 15px;
+      word-break: break-word;
+    }
+
+    .chat-bubble.incoming {
+      background-color: #f1f1f1;
+    }
+
+    .chat-bubble.outgoing {
+      background-color: #007bff;
+      color: white;
+      margin-left: auto;
+    }
+
+    .chat-meta {
+      font-size: 0.8rem;
+      color: #6c757d;
+    }
+
+    .chat-meta.right {
+      text-align: right;
+    }
+
+    .chat-timestamp {
+      color: #007bff;
+      font-size: 0.75rem;
+    }
+
+    .input-area {
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+    }
+
+    .dot-flashing {
+      margin-top: 8px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #aaa;
+      animation: dotFlashing 1s infinite linear alternate;
+    }
+
+    @keyframes dotFlashing {
+      0% { opacity: 0.2; }
+      50% { opacity: 1; }
+      100% { opacity: 0.2; }
+    }
+    .dot {
+      animation: blink 1.4s infinite both;
+      font-size: 1.2rem;
+    }
+    .dot:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+    .dot:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+  
+    @keyframes blink {
+      0% { opacity: 0.2; }
+      20% { opacity: 1; }
+      100% { opacity: 0.2; }
+    }
+    .online-status {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background-color: #28a745;
+      border: 2px solid white;
+      border-radius: 50%;
+      bottom: 0;
+      right: 0;
+    }
+     
+    .avatar-with-status {
+      position: relative;
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+    }
+    
+    .avatar-with-status::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 8px;
+      height: 8px;
+      background-color: #28a745; /* green */
+      border: 0px solid white;
+      border-radius: 50%;
+    }
+    .typing-bubble {
+      background-color: #f1f1f1;
+      padding: 6px 10px;
+      border-radius: 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    
+    .dot {
+      width: 6px;
+      height: 6px;
+      background-color: #555;
+      border-radius: 50%;
+      animation: bounceUpDown 1.2s infinite ease-in-out;
+    }
+    
+    .dot:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+    
+    .dot:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+    
+    @keyframes bounceUpDown {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+    }.chat-input {
+      background-color: white;
+    }
+    .chat-input input:focus {
+      outline: none;
+      box-shadow: none;
+    } .small-avatar {
+      width: 32px;
+      height: 32px;
+      object-fit: cover;
+    }
