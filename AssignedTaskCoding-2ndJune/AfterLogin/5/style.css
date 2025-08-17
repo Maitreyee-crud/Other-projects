@@ -1,0 +1,118 @@
+  * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      max-width: 430px;
+      margin: auto;
+      padding: 20px 16px 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .progress-container {
+      height: 4px;
+      background-color: #e0e0e0;
+      border-radius: 4px;
+      margin-bottom: 6px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 40%;
+      background-color: #000;
+    }
+
+    .step-indicator {
+      text-align: right;
+      font-size: 12px;
+      color: #999;
+      margin-bottom: 16px;
+    }
+
+    .sub-question {
+      font-weight: 600;
+      font-size: 25px;
+      margin-bottom: 16px;
+    }
+
+    .buttons-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .option-button {
+      padding: 10px 14px;
+      background-color: #f1f1f1;
+      border: none;
+      border-radius: 8px;
+      font-size: 14\px;
+      color: #555;
+      cursor: pointer;
+    }
+
+    .option-button.selected {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .footer-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 400px;
+      padding: 16px 0;
+    }
+
+    .back-btn {
+      background: none;
+      border: none;
+      color: #555;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .next-btn {
+      width: 44px;
+      height: 44px;
+      background-color: #333;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    .bottom-bar .bar {
+      width: 100px;
+      height: 4px;
+      background: #333;
+      border-radius: 2px;
+    align-items: center;
+    margin-left: 120px;
+    }
+    
+    .bottom-bar {
+      padding: 6px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }

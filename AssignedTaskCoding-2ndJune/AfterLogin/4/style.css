@@ -1,0 +1,175 @@
+* {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+      background-color: #f9f9f9;
+      overflow: hidden;
+    }
+
+    .screen {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px 16px 10px;
+      overflow-y: auto;
+    }
+
+    .header {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .progress-container {
+      height: 4px;
+      background-color: #e0e0e0;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 33.3%;
+      background-color: #000;
+      border-radius: 4px;
+    }
+
+    .step-indicator {
+      text-align: right;
+      font-size: 12px;
+      color: #999;
+      margin-bottom: 16px;
+    }
+
+    label {
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      background-color: transparent;
+    }
+
+    .form-spacing {
+      margin-bottom: 20px;
+    }
+
+    .predictive-text-bar {
+      background: #d7dadd;
+      display: flex;
+      justify-content: space-around;
+      padding: 6px 0;
+    }
+
+    .predictive-text-bar div {
+      flex: 1;
+      text-align: center;
+      color: white;
+      font-size: 14px;
+    }
+
+    .nav-buttons {
+     
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 16px;
+    }
+
+    .nav-buttons .back {
+      font-size: 14px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .nav-buttons .next {
+      width: 44px;
+      height: 44px;
+      background-color: #333;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .keyboard-container {
+      background: #d7dadd;
+      padding: 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .key-row {
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+    }
+
+    .key {
+      flex: 1;
+      padding: 12px 0;
+      background: white;
+      border-radius: 6px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .key.special {
+      flex: 1.3;
+    }
+
+    .key.space {
+      flex: 4;
+    }
+
+    .bottom-bar {
+      background: #d7dadd;
+      padding: 6px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .bottom-bar i {
+      font-size: 20px;
+      color: #444;
+    }
+
+    .bottom-bar .bar {
+      width: 100px;
+      height: 4px;
+      background: black;
+      border-radius: 2px;
+    }
+
+    @media (max-width: 480px) {
+      .key {
+        font-size: 14px;
+      }
+
+      .bottom-bar .bar {
+        width: 80px;
+      }
+    }
